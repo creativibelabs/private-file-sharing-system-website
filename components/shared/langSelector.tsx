@@ -50,10 +50,10 @@ export default function LanguageSelector({ locale }: { locale: string }) {
     <div className="relative">
       <Select.Root value={lang} onValueChange={handleLanguageChange}>
         <Select.Trigger 
-          className="inline-flex items-center justify-between rounded-lg border border-emerald-500 px-4 py-2 text-sm text-gray-200 focus:outline-none"
+          className="inline-flex items-center justify-between rounded-xl border border-emerald-500 px-4 py-3 text-sm text-gray-200 focus:outline-none"
           aria-label="Select a language"
         >
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <Image 
               src={currentLanguage.flag} 
               alt={`${currentLanguage.name} flag`} 
@@ -64,13 +64,13 @@ export default function LanguageSelector({ locale }: { locale: string }) {
             <Select.Value>{currentLanguage.name}</Select.Value>
           </div>
           <Select.Icon>
-            <ChevronDownIcon className="h-4 w-4 text-gray-200" />
+            <ChevronDownIcon className="h-4 w-4 text-gray-200 ml-3" />
           </Select.Icon>
         </Select.Trigger>
 
         <Select.Portal>
           <Select.Content 
-            className="z-50 rounded-md border border-emerald-500 bg-green-950"
+            className="z-50 rounded-xl border border-emerald-500 bg-green-950"
             position="popper"
             sideOffset={5}
             align="start"
