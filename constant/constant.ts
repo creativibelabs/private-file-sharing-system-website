@@ -10,6 +10,8 @@ import JCB from "@/public/payment-icons/jcb.png";
 import MC from "@/public/payment-icons/master-card.png";
 import ST from "@/public/payment-icons/stripe.png";
 
+import avatar from "@/public/images/avatar.png";
+
 export const paymentIcons = [
   {
     icon: VISA,
@@ -130,3 +132,24 @@ export const legalLinks = [
     link: "/refund-policy",
   },
 ];
+
+export const testimonials = [
+    {
+      name: "John Williams",
+      avatar: avatar,
+      rating: 4,
+      comment: "OHHHH Thanks god !!!! Finally there is someone making it for me to use on my projects. Love ya"
+    },
+    {
+      name: "Sarah Chen",
+      avatar: avatar,
+      rating: 5,
+      comment: "This is exactly what I needed for my file management. The security features are top-notch!"
+    },
+    {
+      name: "Michael Rodriguez",
+      avatar: avatar,
+      rating: 4,
+      comment: "Great interface and super easy to use. Exactly what I was looking for in a private file sharing system."
+    }
+  ]; 
