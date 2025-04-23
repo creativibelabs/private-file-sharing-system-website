@@ -8,10 +8,10 @@ export default async function Hero() {
 
     return (
         <section
-            className=" min-h-screen bg-center flex items-center justify-center" style={{ backgroundImage: 'url("/images/bg-img.jpg")' }}
+            className="min-h-screen bg-center flex items-center justify-center" 
         >
 
-            <div className="gradient-overlay" />
+            {/* <div className="gradient-overlay" /> */}
 
             {/* Floating Images */}
             <div className="absolute top-30 left-30 z-10">

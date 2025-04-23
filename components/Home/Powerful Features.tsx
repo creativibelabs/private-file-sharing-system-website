@@ -16,7 +16,6 @@ const FeatureIcon: React.FC<FeatureIconProps> = ({ imageSrc, top, left, right, b
             className="absolute transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 hover:scale-110"
             style={{ top, left, right, bottom }}
         >
-
             <Image
                 src={imageSrc}
                 alt="Feature icon"
@@ -32,14 +31,14 @@ const PowerfulFeatures: React.FC = () => {
     return (
         <section className="py-6 px-4 text-white relative overflow-hidden">
             {/* Main heading */}
-            <div className='absolute'>
-            <img src="/images/Powerfullfeaturesimgs/shade's.png" alt="" />
+            <div className='absolute top-15 right-220'>
+                <img src="/images/PowerfullFeaturesimgs/shade.png" alt="side shade" />
             </div>
             
             
             <div className="text-center">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2">Powerful Features</h2>
-                <p className="text-xl md:text-2xl lg:text-3xl font-medium">At Your Fingertips.</p>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2">Powerful Features <br />At Your Fingertips.</h2>
+                <p className="text-xl md:text-2xl lg:text-3xl font-medium"></p>
             </div>
             <div className="relative mx-auto w-full max-w-3xl aspect-square">
                 <div className="relative w-full h-full">
