@@ -9,7 +9,7 @@ export default function Header({ locale }: { locale: string }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-40 bg-green-950 pt-3">
+        <header className="fixed top-0 left-0 right-0 z-40 bg-transparent pt-3">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
@@ -52,7 +52,7 @@ export default function Header({ locale }: { locale: string }) {
                     <button
                         type="button"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        className="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-gray-200 hover:text-white hover:bg-emerald-800/50 transition-colors"
+                        className="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-gray-200 hover:text-white hover:bg-emerald-800/50 transition-colors "
                         aria-controls="mobile-menu"
                         aria-expanded={isMobileMenuOpen}
                     >
@@ -74,7 +74,7 @@ export default function Header({ locale }: { locale: string }) {
                     isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
                 }`}
             >
-                <div className="px-4 pt-2 pb-3 space-y-2 bg-green-950    border-t border-emerald-800/50 mt-3">
+                <div className="px-4 pt-2 pb-3 space-y-2 bg-[#00281A]    border-t border-emerald-800/50 mt-3">
                     {navList.map((nav, index) => (
                         <Link
                             key={index}
