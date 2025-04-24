@@ -35,10 +35,10 @@ const GetStarted = () => {
 
       <div className="relative z-10 container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h3 className="text-3xl md:text-5xl font-bold mb-6 text-white">
+          <h3 className="text-3xl md:text-5xl font-bold md:mb-3 text-white">
             Get Started in Minutes
           </h3>
-          <p className="text-lg md:text-xl text-gray-200">
+          <p className="text-md md:text-xl text-gray-200">
             Secure your data in minutes with seamless upload, <br className="hidden md:block" />
             management, and instant access.
           </p>
