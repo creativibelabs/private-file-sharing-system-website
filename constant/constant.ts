@@ -191,6 +191,8 @@ export const pricingPlans = {
     {
       title: "Basic",
       price: "Free",
+      desc: "Get started for free",
+      msg: "What you will get",
       features: [
         { feature: "5 GB Storage", included: true },
         { feature: "Basic Sharing", included: true },
@@ -203,6 +205,8 @@ export const pricingPlans = {
     {
       title: "Basic",
       price: "Free",
+      desc: "Get started for free",
+      msg: "What you will get",
       features: [
         { feature: "10 GB Storage", included: true },
         { feature: "Advanced Sharing", included: true },
@@ -216,6 +220,8 @@ export const pricingPlans = {
       title: "Pro",
       price: 9.99,
       period: "month",
+      msg: "What you will get",
+      desc :"Power + Security for Individuals",
       features: [
         { feature: "50 GB Storage", included: true },
         { feature: "Advanced Sharing", included: true },
@@ -229,6 +235,8 @@ export const pricingPlans = {
     {
       title: "Enterprise",
       price: "Custom",
+      msg: "What you will get",
+      desc :"Built for Teams & Businesses",
       features: [
         { feature: "Unlimited Storage", included: true },
         { feature: "Team Sharing", included: true },
@@ -243,6 +251,8 @@ export const pricingPlans = {
     {
       title: "Basic",
       price: "Free",
+      desc: "Get started for free",
+      msg: "What you will get",
       features: [
         { feature: "5 GB Storage", included: true },
         { feature: "Basic Sharing", included: true },
@@ -255,6 +265,8 @@ export const pricingPlans = {
     {
       title: "Basic",
       price: "Free",
+      desc: "Get started for free",
+      msg: "What you will get",
       features: [
         { feature: "10 GB Storage", included: true },
         { feature: "Advanced Sharing", included: true },
@@ -268,6 +280,8 @@ export const pricingPlans = {
       title: "Pro",
       price: 99.99,
       period: "year",
+      desc :"Power + Security for Individuals",
+      msg: "What you will get",
       features: [
         { feature: "50 GB Storage", included: true },
         { feature: "Advanced Sharing", included: true },
@@ -280,7 +294,9 @@ export const pricingPlans = {
     },
     {
       title: "Enterprise",
+      desc :"Built for Teams & Businesses",
       price: "Custom",
+      msg: "What you will get",
       features: [
         { feature: "Unlimited Storage", included: true },
         { feature: "Team Sharing", included: true },

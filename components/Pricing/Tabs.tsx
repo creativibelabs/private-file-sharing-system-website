@@ -42,6 +42,8 @@ const Tabs = () => {
             features={plan.features}
             buttonText={plan.buttonText}
             popular={plan.popular}
+            desc={plan.desc}
+            msg={plan.msg}
           />
         ))}
       </div>

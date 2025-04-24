@@ -2,6 +2,7 @@ import Link from "next/link";
 import LanguageSelector from "../shared/langSelector";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import Button from "../shared/Button";
 
 export default async function Hero() {
     const t = await getTranslations("HomePage");
@@ -67,12 +68,8 @@ export default async function Hero() {
 
                 {/* Buttons */}
                 <div className="flex justify-center gap-4 flex-wrap">
-                    <button className="rounded-full md:text-lg px-8 py-3 border border-emerald-700 overflow-hidden hover:bg-emerald-500/80 bg-gradient-to-r from-emerald-950 to-emerald-600/50 ">
-                        Secure Your Files Now
-                    </button>
-                    <button className="rounded-full px-8 md:text-lg py-2 border border-emerald-700 overflow-hidden hover:bg-emerald-500/80 bg-gradient-to-r from-emerald-950 to-emerald-600/50 ">
-                        View Pricing
-                    </button>
+                    <Button text="Secure Your Files Now" />
+                    <Button text="View Pricing" />                    
                 </div>
             </div>
         </section>
