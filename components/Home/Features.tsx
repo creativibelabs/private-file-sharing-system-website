@@ -37,8 +37,7 @@ const PowerfulFeatures: React.FC = () => {
             
             
             <div className="text-center">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2">Powerful Features <br />At Your Fingertips.</h2>
-                <p className="text-xl md:text-2xl lg:text-3xl font-medium"></p>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Powerful Features <br />At Your Fingertips.</h2>
             </div>
             <div className="relative mx-auto w-full max-w-3xl aspect-square">
                 <div className="relative w-full h-full">
@@ -109,11 +108,6 @@ const PowerfulFeatures: React.FC = () => {
                         left="7%"
                     />
                 </div>
-            </div>
-            <div className="text-center">
-                <h3 className="text-2xl md:text-5xl font-bold">Get Started in Minutes</h3>
-                <p className="text-lg mb-6 md:mb-8">Secure your data in minutes with seamless upload, <br />management, and instant access.</p>
-
             </div>
         </section>
     );

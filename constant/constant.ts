@@ -134,22 +134,54 @@ export const legalLinks = [
 ];
 
 export const testimonials = [
-    {
-      name: "John Williams",
-      avatar: avatar,
-      rating: 4,
-      comment: "OHHHH Thanks god !!!! Finally there is someone making it for me to use on my projects. Love ya"
-    },
-    {
-      name: "Sarah Chen",
-      avatar: avatar,
-      rating: 5,
-      comment: "This is exactly what I needed for my file management. The security features are top-notch!"
-    },
-    {
-      name: "Michael Rodriguez",
-      avatar: avatar,
-      rating: 4,
-      comment: "Great interface and super easy to use. Exactly what I was looking for in a private file sharing system."
-    }
-  ]; 
+  {
+    name: "John Williams",
+    avatar: avatar,
+    rating: 4,
+    comment:
+      "OHHHH Thanks god !!!! Finally there is someone making it for me to use on my projects. Love ya",
+  },
+  {
+    name: "Sarah Chen",
+    avatar: avatar,
+    rating: 5,
+    comment:
+      "This is exactly what I needed for my file management. The security features are top-notch!",
+  },
+  {
+    name: "Michael Rodriguez",
+    avatar: avatar,
+    rating: 4,
+    comment:
+      "Great interface and super easy to use. Exactly what I was looking for in a private file sharing system.",
+  },
+];
+
+export const steps = [
+  {
+    number: "01",
+    title: "Upload Your Files",
+    description: "Upload Your Files Instantly With Secure Encryption.",
+    // icon: "/images/Group 200.png",
+    icon: "/images/icons/upload.png",
+  },
+  {
+    number: "02",
+    title: "Manage Securely",
+    description: "Effortlessly Organize And Protect Your Data.",
+    icon: "/images/icons/secure.png",
+  },
+  {
+    number: "03",
+    title: "Unlimited Access",
+    description: "Access Your Files From Anywhere, Anytime, Securely.",
+    icon: "/images/icons/access.png",
+  },
+  {
+    number: "04",
+    title: "Seamless Sharing",
+    description:
+      "Share Your Files Easily With Secure Links And Instant Access.",
+    icon: "/images/icons/share.png",
+  },
+];

@@ -50,12 +50,12 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#00281A]`}
       >
         <NextIntlClientProvider messages={messages}>
           <Header locale={locale} />
           {children}
-          <Footer locale={locale} />
+          {/* <Footer locale={locale} /> */}
         </NextIntlClientProvider>
       </body>
     </html>
