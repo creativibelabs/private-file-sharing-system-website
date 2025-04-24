@@ -125,7 +125,7 @@ const Footer = ({ locale }: { locale: string }) => {
         <p className=""></p>
       </div>
 
-      <div className="absolute top-60 -right-4 -z-10 w-[300px] h-[300px]">
+      <div className="absolute md:top-60 top-0 -right-4 -z-10 w-[300px] h-[300px]">
         <Image
           src="/images/shade.png"
           alt="polygon icon"
