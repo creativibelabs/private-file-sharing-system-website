@@ -185,3 +185,110 @@ export const steps = [
     icon: "/images/icons/share.png",
   },
 ];
+
+export const pricingPlans = {
+  monthly: [
+    {
+      title: "Basic",
+      price: "Free",
+      features: [
+        { feature: "5 GB Storage", included: true },
+        { feature: "Basic Sharing", included: true },
+        { feature: "File Encryption", included: true },
+        { feature: "Email Support", included: false },
+        { feature: "Advanced Security", included: false },
+      ],
+      buttonText: "Sign Up Free",
+    },
+    {
+      title: "Basic",
+      price: "Free",
+      features: [
+        { feature: "10 GB Storage", included: true },
+        { feature: "Advanced Sharing", included: true },
+        { feature: "File Encryption", included: true },
+        { feature: "Email Support", included: true },
+        { feature: "Basic Security", included: true },
+      ],
+      buttonText: "Sign Up Free",
+    },
+    {
+      title: "Pro",
+      price: 9.99,
+      period: "month",
+      features: [
+        { feature: "50 GB Storage", included: true },
+        { feature: "Advanced Sharing", included: true },
+        { feature: "File Encryption", included: true },
+        { feature: "Priority Support", included: true },
+        { feature: "Advanced Security", included: true },
+      ],
+      buttonText: "Get Started",
+      popular: true,
+    },
+    {
+      title: "Enterprise",
+      price: "Custom",
+      features: [
+        { feature: "Unlimited Storage", included: true },
+        { feature: "Team Sharing", included: true },
+        { feature: "Advanced Encryption", included: true },
+        { feature: "24/7 Support", included: true },
+        { feature: "Custom Security", included: true },
+      ],
+      buttonText: "Contact Sales",
+    },
+  ],
+  yearly: [
+    {
+      title: "Basic",
+      price: "Free",
+      features: [
+        { feature: "5 GB Storage", included: true },
+        { feature: "Basic Sharing", included: true },
+        { feature: "File Encryption", included: true },
+        { feature: "Email Support", included: false },
+        { feature: "Advanced Security", included: false },
+      ],
+      buttonText: "Sign Up Free",
+    },
+    {
+      title: "Basic",
+      price: "Free",
+      features: [
+        { feature: "10 GB Storage", included: true },
+        { feature: "Advanced Sharing", included: true },
+        { feature: "File Encryption", included: true },
+        { feature: "Email Support", included: true },
+        { feature: "Basic Security", included: true },
+      ],
+      buttonText: "Sign Up Free",
+    },
+    {
+      title: "Pro",
+      price: 99.99,
+      period: "year",
+      features: [
+        { feature: "50 GB Storage", included: true },
+        { feature: "Advanced Sharing", included: true },
+        { feature: "File Encryption", included: true },
+        { feature: "Priority Support", included: true },
+        { feature: "Advanced Security", included: true },
+      ],
+      buttonText: "Get Started",
+      popular: true,
+    },
+    {
+      title: "Enterprise",
+      price: "Custom",
+      features: [
+        { feature: "Unlimited Storage", included: true },
+        { feature: "Team Sharing", included: true },
+        { feature: "Advanced Encryption", included: true },
+        { feature: "24/7 Support", included: true },
+        { feature: "Custom Security", included: true },
+      ],
+      buttonText: "Contact Sales",
+    },
+  ],
+};
