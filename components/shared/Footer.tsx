@@ -10,7 +10,7 @@ import {
 
 const Footer = ({ locale }: { locale: string }) => {
   return (
-    <footer className="bg-[#1C825E] rounded-xl border border-emerald-700 overflow-hidden bg-gradient-to-r from-emerald-950 to-emerald-600/50 p-4 md:p-8 ">
+    <footer className="bg-emerald-900/40 rounded-2xl p-10 m-7 border border-emerald-800 backdrop-blur-sm">
       <div className="grid grid-cols-1 md:grid-cols-4 ">
         <section>
           {/* Logo */}
@@ -98,7 +98,7 @@ const Footer = ({ locale }: { locale: string }) => {
         </section>
 
         <section className="text-center md:text-left mt-9 md:mt-0">
-          <h2 className=" font-bold mb-4">Stay Tuned!</h2>
+          <h2 className=" font-bold mb-4 text-white">Stay Tuned!</h2>
           <p className="text-gray-100 text-xs md:text-sm mb-6">
             Get the latest articles and business updates that you need to know,
             you'll even get special recommendations weekly.
@@ -123,6 +123,15 @@ const Footer = ({ locale }: { locale: string }) => {
         <p className="order-3 text-emerald-300">support@PrivateFileShare.com</p>
         <p className="order-2 text-[#39FF14]">© 2025 Ai All Rights Reserved.</p>
         <p className=""></p>
+      </div>
+
+      <div className="absolute top-60 -right-4 -z-10 w-[300px] h-[300px]">
+        <Image
+          src="/images/shade.png"
+          alt="polygon icon"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
     </footer>
   );

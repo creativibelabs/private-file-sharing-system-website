@@ -2,12 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { steps } from "@/constant/constant";
 import StepsCard from "./StepsCard";
+import Testimonials from "./Testimonials";
 
 
 
 const GetStarted = () => {
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section className="relative py-10 overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
@@ -44,6 +45,18 @@ const GetStarted = () => {
         </div>
 
         <StepsCard />
+
+        <div className="text-center max-w-3xl mx-auto md:mt-16 mt-4">
+          <h3 className="text-3xl md:text-5xl font-bold mb-6 mt-10 text-white">
+          See Why Users Choose Us
+          </h3>
+          <p className="text-lg md:text-xl text-gray-200 w-full max-w-100 mx-auto">
+          Hear from individuals and teams who trust us to 
+          protect what matters most.
+          </p>
+        </div>
+
+        <Testimonials />
       </div>
     </section>
   );

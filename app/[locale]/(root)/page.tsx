@@ -13,7 +13,6 @@ export default function LandingPage() {
         <Hero />
         <PowerfulFeatures />
         <GetStarted />
-        {/* <Testimonials /> */}
       </div>
     </main>
   );
