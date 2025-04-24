@@ -1,6 +1,6 @@
 export default function Support(){
     return(
-        <main className="min-h-screen text-white bg-white">
+        <main>
             Support Page
         </main>
     )
