@@ -34,7 +34,7 @@ const PowerfulFeatures: React.FC = () => {
         <section className="py-6 px-4 text-white relative overflow-hidden">
             {/* Main heading */}
             <div className='absolute top-15 right-220'>
-                <img src="/images/PowerfullFeaturesimgs/shade.png" alt="side shade" />
+                <img src="/images/feature/shade.png" alt="side shade" />
             </div>
 
 
@@ -45,7 +45,7 @@ const PowerfulFeatures: React.FC = () => {
                 <div className="relative w-full h-full">
                     <div className="absolute inset-0">
                         <Image
-                            src="/images/Powerfullfeaturesimgs/circle-large.png"
+                            src="/images/feature/circle-large.png"
                             alt="Large circle"
                             fill
                             className="object-contain"
@@ -55,7 +55,7 @@ const PowerfulFeatures: React.FC = () => {
 
                     <div className="absolute  inset-[19%]">
                         <Image
-                            src="/images/PowerfullFeaturesimgs/circle-medium.png"
+                            src="/images/feature/circle-medium.png"
                             alt="Medium circle"
                             fill
                             className="object-contain"
@@ -64,7 +64,7 @@ const PowerfulFeatures: React.FC = () => {
                     </div>
                     <div className="absolute md:top-95 top-40 inset-[30%]">
                         <Image
-                            src="/images/PowerfullFeaturesimgs/circle-small.png"
+                            src="/images/feature/circle-small.png"
                             alt="Small circle"
                             fill
                             className="object-contain"
@@ -74,7 +74,7 @@ const PowerfulFeatures: React.FC = () => {
 
                     {/* Features positioned correctly */}
                     <FeatureIcon
-                        imageSrc="/images/PowerfullFeaturesimgs/FeatureIcon1.png"
+                        imageSrc="/images/feature/FeatureIcon1.png"
                         top="23%"
                         left="50%"
                         customClass="feature-icon"
@@ -83,35 +83,35 @@ const PowerfulFeatures: React.FC = () => {
 
 
                     <FeatureIcon
-                        imageSrc="/images/PowerfullFeaturesimgs/FeatureIcon2.png"
+                        imageSrc="/images/feature/FeatureIcon2.png"
                         top="50%"
                         right="-5%"
                         customClass="feature-icon"
                     />
 
                     <FeatureIcon
-                        imageSrc="/images/PowerfullFeaturesimgs/FeatureIcon3.png"
+                        imageSrc="/images/feature/FeatureIcon3.png"
                         bottom="38%"
                         right="37%"
                         customClass="feature-icon"
                     />
 
                     <FeatureIcon
-                        imageSrc="/images/PowerfullFeaturesimgs/FeatureIcon4.png"
+                        imageSrc="/images/feature/FeatureIcon4.png"
                         bottom="45%"
                         right="20%"
                         customClass="feature-icon"
                     />
 
                     <FeatureIcon
-                        imageSrc="/images/PowerfullFeaturesimgs/FeatureIcon5.png"
+                        imageSrc="/images/feature/FeatureIcon5.png"
                         top="38%"
                         left="35%"
                         customClass="feature-icon"
                     />
 
                     <FeatureIcon
-                        imageSrc="/images/PowerfullFeaturesimgs/FeatureIcon6.png"
+                        imageSrc="/images/feature/FeatureIcon6.png"
                         top='50%'
                         left="7%"
                         customClass="feature-icon"

@@ -10,7 +10,7 @@ import {
 
 const Footer = ({ locale }: { locale: string }) => {
   return (
-    <footer className="bg-emerald-900/40 rounded-2xl p-10 m-7 border border-emerald-800 backdrop-blur-sm">
+    <footer className="bg-emerald-900/40 rounded-2xl md:p-10 p-4 md:m-7 m-2 border border-emerald-800 backdrop-blur-sm relative overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-4 ">
         <section>
           {/* Logo */}
@@ -20,14 +20,14 @@ const Footer = ({ locale }: { locale: string }) => {
           >
             logo
           </Link>
-          <p className="mt-6 md:mt-12 text-gray-100 text-sm md:text-base">
+          <p className="my-6 md:mt-12 text-gray-100 text-sm md:text-base">
             Welcome to your private, secure cloud space
           </p>
           <p className="mt-2 md:mt-4 text-gray-100 text-xs md:text-sm max-w-sm">
             Upload, manage, and access your files with full control and
             end-to-end protection.
           </p>
-          <div className="flex items-center md:gap-x-6 gap-x-4  md:mt-7 mt-4">
+          <div className="flex items-center md:gap-x-6 gap-x-4 md:mt-7 mt-4">
             {socialIcons.map((item, index) => {
               return (
                 <Link
@@ -61,8 +61,8 @@ const Footer = ({ locale }: { locale: string }) => {
           </div>
         </section>
 
-        <section className="md:ms-14 ms-5 mt-9 md:mt-0 flex flex-col md:text-center">
-          <h1 className="text-emerald-400 font-bold mb-8 text-sm">
+        <section className="md:ms-14 ms-1 mt-9 md:mt-0 flex flex-col md:text-center">
+          <h1 className="text-emerald-400 font-bold md:mb-8 mb-3 text-sm">
             Quick Links
           </h1>
           <div className="flex flex-col md:items-center">
@@ -80,8 +80,8 @@ const Footer = ({ locale }: { locale: string }) => {
           </div>
         </section>
 
-        <section className="md:ms-14 ms-5 mt-9 md:mt-0 flex flex-col ">
-          <h2 className="text-emerald-400 font-bold mb-8 text-sm">
+        <section className="md:ms-14 ms-1 mt-9 md:mt-0 flex flex-col ">
+          <h2 className="text-emerald-400 font-bold md:mb-8 mb-3 text-sm">
             Legal Links
           </h2>
           {legalLinks.map((item, index) => {
@@ -125,12 +125,12 @@ const Footer = ({ locale }: { locale: string }) => {
         <p className=""></p>
       </div>
 
-      <div className="absolute md:top-60 top-0 -right-4 -z-10 w-[300px] h-[300px]">
+      <div className="absolute -top-80 -right-140 overflow-hidden">
         <Image
           src="/images/shade.png"
-          alt="polygon icon"
-          layout="fill"
-          objectFit="cover"
+          alt="Shaded Image"
+          height={500} 
+          width={1920}
         />
       </div>
     </footer>

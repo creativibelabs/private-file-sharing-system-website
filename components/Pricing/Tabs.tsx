@@ -8,7 +8,7 @@ const Tabs = () => {
   const [isYearly, setIsYearly] = useState(false);
 
   return (
-    <div className="max-w-7xl mx-auto px-4">
+    <div className="max-w-7xl mx-auto px-4 md:mb-20 mb-10">
       {/* Pricing Toggle */}
       <div className="flex justify-center mb-12">
         <div className="inline-flex items-center p-1 rounded-xl border border-emerald-300 text-[#FDFDFD]">
