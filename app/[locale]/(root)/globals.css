@@ -48,11 +48,18 @@ body {
 
 
 
-
 @media (max-width: 640px) {
   .feature-icon {
     width:60px;
     height: 60px;
   }
+
+  .bg-mobile{
+    background-size: contain;
+    height: 600px;
+  }
   
+
+
+
 }
