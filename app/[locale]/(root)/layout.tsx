@@ -7,6 +7,7 @@ import { routing } from '@/i18n/routing';
 import "./globals.css";
 import { getMessages } from "next-intl/server";
 import Header from "@/components/shared/Header";
+import Footer from "@/components/shared/Footer";
 
 
 const geistSans = Geist({
@@ -49,11 +50,12 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#00281A] text-white`}
       >
         <NextIntlClientProvider messages={messages}>
           <Header locale={locale} />
           {children}
+          <Footer locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -2,68 +2,76 @@ import Link from "next/link";
 import LanguageSelector from "../shared/langSelector";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import Button from "../shared/Button";
 
 export default async function Hero() {
-    const t = await getTranslations("HomePage")
+    const t = await getTranslations("HomePage");
+
     return (
-        <section>
-            <div
-                className="min-h-screen text-white relative bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: "url('/images/bg.png') !important" }}
-            >
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-green-950/90 z-0" />
+        <section
+            className="min-h-screen bg-center flex md:pt-0 pt-30 md:items-center justify-center" 
+        >
 
-                {/* Main Content */}
-                <div className="relative z-10">
+            {/* <div className="gradient-overlay" /> */}
 
-                    {/* Hero Section */}
-                    <section className="text-center mt-16 px-6">
-                        {/* Floating Images */}
-                        <Image
-                            src="/images/storage.png"
-                            alt="Storage"
-                            width={100}
-                            height={100}
-                            className="absolute top-32 left-10 rotate-[15deg]"
-                        />
-                        <Image
-                            src="/images/usage.png"
-                            alt="Usage"
-                            width={100}
-                            height={100}
-                            className="absolute top-32 right-10 -rotate-[12deg]"
-                        />
+            {/* Floating Images */}
+            <div className="absolute md:top-30 top-[560px] left-50  md:left-30 z-10">
+                <Image
+                    src="/images/storage.png"
+                    alt="Storage"
+                    width={190}
+                    height={190}
+                    className="rotate-[8deg]"
+                />
+            </div>
+            <div className="absolute bottom-30 right-40 z-10">
+                <Image
+                    src="/images/usage.png"
+                    alt="Usage"
+                    width={180}
+                    height={180}
+                    className="-rotate-[6deg]  md:block"
+                />
+            </div>
 
-                        {/* Main Text */}
-                        <h1 className="text-4xl md:text-6xl font-extrabold mb-6">
-                            {t("title_1")}<br />
-                            <span className="text-white">{t("title_2")}</span>
-                        </h1>
-                        <p className="text-lg md:text-xl mb-8">
-                            {t("subtitle_1")}<br />
-                            {t("subtitle_2")}
-                        </p>
+            {/* Main Content */}
+            <div className="relative z-20 text-white text-center px-6 max-w-4xl w-full">
+                <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                    {t("title_1")}<br />
+                    <span className="text-white text-3xl md:text-5xl">{t("title_2")}</span>
+                </h1>
 
-                        {/* Buttons */}
-                        <div className="flex justify-center gap-4">
-                            <button className="bg-green-600 px-6 py-2 rounded-full text-white hover:bg-green-700">
-                                Secure Your Files Now
-                            </button>
-                            <button className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-green-900 transition">
-                                View Pricing
-                            </button>
+                {/* Subtitles with Framed Icons */}
+                <div className="text-lg  md:text-xl mb-10 ">
+                    {/* Subtitle 1 */}
+                    <div className="flex justify-center items-center gap-3 flex-wrap">
+                        <span className="text-sm md:text-2xl">{t("subtitle_1")}</span>
+                        <div
+                            className="w-12 h-12 bg-center bg-contain bg-no-repeat flex items-center justify-center"
+                            style={{ backgroundImage: "url('/images/icons/frame.png')" }}
+                        >
+                            <Image src="/images/icons/file.png" alt="File Icon" width={24} height={24} />
                         </div>
-                    </section>
+                    </div>
 
-                    {/* Features Section */}
-                    <section className="mt-24 px-6">
-                        <h2 className="text-3xl md:text-4xl font-bold text-center">
-                            Powerful Features<br />At Your Fingertips.
-                        </h2>
-                    </section>
+                    {/* Subtitle 2 */}
+                    <div className="flex justify-center items-center flex-wrap">
+                        <div
+                            className="w-12 h-12 bg-center bg-contain bg-no-repeat flex items-center justify-center"
+                            style={{ backgroundImage: "url('/images/icons/frame.png')" }}
+                        >
+                            <Image src="/images/icons/lock.png" alt="Lock Icon" width={60} height={60} />
+                        </div>
+                        <span className="text-sm md:text-2xl ">{t("subtitle_2")}</span>
+                    </div>
+                </div>
+
+                {/* Buttons */}
+                <div className="flex justify-center gap-4 flex-wrap">
+                    <Button text="Secure Your Files Now" />
+                    <Button text="View Pricing" />                    
                 </div>
             </div>
         </section>
-    )
+    );
 }
