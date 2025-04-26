@@ -10,24 +10,27 @@ export default function Header({ locale }: { locale: string }) {
 
     return (
         <header className="fixed top-0 left-0 right-0 z-40 bg-transparent pt-3">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
+            <div className="">
+                <div className="flex md:justify-center justify-between px-6 space-x-3  items-center h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
-                        <Link href={`/${locale}`} className="bg-emerald-400/90 text-white px-6 py-2.5 rounded-xl font-medium">
+                        <Link href={`/${locale}`} className="bg-emerald-400/90 text-white px-8 py-2 rounded-xl font-medium">
                             logo
                         </Link>
                     </div>
 
-                    {/* Navigation - Desktop */}
                     <nav className="hidden md:block">
-                        <div className="rounded-xl border border-emerald-700 overflow-hidden bg-gradient-to-r from-emerald-950 to-emerald-600/50">
-                            <ul className="flex items-center">
+                        <div
+                            className="rounded-xl border border-emerald-700 max-w-3xl"
+
+
+                        >
+                            <ul className=" flex items-center overflow-hidden bg-no-repeat bg-cover justify-center bg-gradient-to-b from-emerald-600/60 to-emerald-900/40  rounded-xl backdrop-filter backdrop-blur-md hover:backdrop-blur-md " >
                                 {navList.map((nav, index) => (
                                     <li key={index}>
                                         <Link
                                             href={`/${locale}${nav.path}`}
-                                            className="text-gray-200 hover:text-white transition-colors text-sm font-medium px-6 py-2.5 inline-block hover:bg-emerald-800/50"
+                                            className=" transition-colors text-sm font-medium px-13 py-2.5 inline-block  hover:text-white hover:bg-gradient-to-r from-emerald-900/40 to-emerald-600/30  rounded-xl text-gray-200 "
                                         >
                                             {nav.title}
                                         </Link>
@@ -37,12 +40,13 @@ export default function Header({ locale }: { locale: string }) {
                         </div>
                     </nav>
 
+
                     {/* Right section - Desktop */}
-                    <div className="hidden md:flex items-center space-x-4">
+                    <div className="hidden md:flex  space-x-3">
                         <LanguageSelector locale={locale} />
                         <Link
                             href={`/${locale}/login`}
-                            className="flex items-center justify-center px-6 py-2.5 text-sm font-medium rounded-xl text-white border border-emerald-500 bg-gradient-to-r from-emerald-900 to-emerald-600/90 hover:from-emerald-400 hover:to-emerald-500 transition-all duration-300 shadow-sm"
+                            className="flex items-center justify-center px-6 py-2 text-sm font-medium rounded-xl text-white border border-emerald-500 bg-gradient-to-r from-emerald-900 to-emerald-600/90 hover:from-emerald-400 hover:to-emerald-500 transition-all duration-300 shadow-sm"
                         >
                             Login
                         </Link>
@@ -69,17 +73,16 @@ export default function Header({ locale }: { locale: string }) {
             </div>
 
             {/* Mobile menu */}
-            <div 
-                className={`md:hidden transition-all duration-300 ease-in-out ${
-                    isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
-                }`}
+            <div
+                className={`md:hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen ? ' opacity-100 backdrop-filter backdrop-blur-lg font-semibold  ' : 'max-h-0 opacity-0 overflow-hidden '
+                    }`}
             >
-                <div className="px-4 pt-2 pb-3 space-y-2 bg-green-950    border-t border-emerald-800/50 mt-3">
+                <div className="px-4 py-3  space-y-2 border-b rounded   border-t border-emerald-700/50 ">
                     {navList.map((nav, index) => (
                         <Link
                             key={index}
                             href={`/${locale}${nav.path}`}
-                            className="block px-4 py-2 text-base text-gray-200 hover:text-white hover:bg-emerald-800/50 rounded-lg transition-colors cursor-pointer"
+                            className="block px-4 py-3 text-base text-gray-200 hover:text-white hover:bg-emerald-800/50 rounded-lg transition-colors cursor-pointer"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             {nav.title}
