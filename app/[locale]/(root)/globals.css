@@ -19,20 +19,20 @@
   }
 }
 
+
 @layer utilities {
-  .animate-dropdown-open {
-    animation: dropdownOpen 300ms ease-out forwards;
-    transform-origin: top;
+  .animate-fadeIn {
+    animation: fadeIn 200ms ease-out;
   }
 
-  @keyframes dropdownOpen {
+  @keyframes fadeIn {
     0% {
       opacity: 0;
-      transform: scaleY(0.9);
+      transform: translateY(-10px);
     }
     100% {
       opacity: 1;
-      transform: scaleY(1);
+      transform: translateY(0);
     }
   }
 }
@@ -47,11 +47,11 @@
 
 
 body {
-  background-image: url(/public/images/bg-img.jpg);
+  /* background-image: url(/public/images/bg-img.jpg);
   background-size: cover; 
   background-position: center; 
-  background-position: center;
-
+  background-position: center; */
+  scrollbar-gutter: stable;
 }
 
 .gradient-overlay {
