@@ -27,21 +27,18 @@ export default function LanguageSelector({ locale }: { locale: string }) {
     setLang(locale)
   }, [locale])
 
-  // Effect to prevent body scroll lock when dropdown is open
+
   useEffect(() => {
-    // Function to fix scrollbar visibility when dropdown opens
+
     const fixScrollbarVisibility = () => {
       if (open) {
-        // Remove any inline styles that might be hiding the scrollbar
         document.body.style.removeProperty('overflow');
         document.body.style.removeProperty('padding-right');
-        
-        // Force the body to be scrollable
         document.body.style.overflow = 'auto';
       }
     };
 
-    // Apply fix immediately and also after a short delay to override any Radix UI styles
+
     if (open) {
       fixScrollbarVisibility();
       const timeoutId = setTimeout(fixScrollbarVisibility, 10);
@@ -58,22 +55,22 @@ export default function LanguageSelector({ locale }: { locale: string }) {
 
   return (
     <div className="relative">
-      <Select.Root 
-        value={lang} 
-        onValueChange={handleLanguageChange} 
-        open={open} 
+      <Select.Root
+        value={lang}
+        onValueChange={handleLanguageChange}
+        open={open}
         onOpenChange={setOpen}
       >
-        <Select.Trigger 
-          className="inline-flex items-center justify-between w-full rounded-xl border border-emerald-500  px-4 py-2.5 text-sm text-gray-200 focus:outline-none shadow-md hover:shadow-lg transition-all duration-300"
+        <Select.Trigger
+          className="inline-flex items-center bg-gradient-to-b from-emerald-600/60 to-emerald-900/40  justify-between w-full rounded-xl border border-emerald-500  px-4 py-2.5 text-sm text-gray-200 focus:outline-none shadow-md  transition-all duration-300"
           aria-label="Select a language"
         >
           <div className="flex items-center gap-3">
-            <Image 
-              src={currentLanguage.flag} 
-              alt={`${currentLanguage.name} flag`} 
-              width={20} 
-              height={15} 
+            <Image
+              src={currentLanguage.flag}
+              alt={`${currentLanguage.name} flag`}
+              width={20}
+              height={15}
               className="rounded-sm"
             />
             <Select.Value>{currentLanguage.name}</Select.Value>
@@ -85,7 +82,7 @@ export default function LanguageSelector({ locale }: { locale: string }) {
 
         <Select.Portal>
           <Select.Content
-            className="z-50 overflow-hidden rounded-xl border border-emerald-500 bg-green-950 shadow-xl animate-dropdown-open"
+            className="z-50 overflow-hidden rounded-xl border border-emerald-500 bg-gradient-to-b from-emerald-600/60 to-emerald-900/40 backdrop-blur-lg  animate-dropdown-open"
             position="popper"
             sideOffset={5}
             align="start"
@@ -96,17 +93,17 @@ export default function LanguageSelector({ locale }: { locale: string }) {
                 <Select.Item
                   key={language.code}
                   value={language.code}
-                  className="relative flex items-center gap-2 rounded-md px-6 py-2 text-sm text-white hover:bg-emerald-800 hover:text-white data-[state=checked]:bg-emerald-700 data-[highlighted]:outline-none cursor-pointer transition-colors"
+                  className="relative flex items-center gap-2 rounded-md px-6 py-2 text-sm text-white hover:border-b hover:border-emerald-500 hover:text-white data-[state=checked]:bg-emerald-700 data-[highlighted]:outline-none cursor-pointer transition-colors"
                 >
                   <Select.ItemIndicator className="absolute left-2">
                     <CheckIcon className="h-4 w-4 text-emerald-300" />
                   </Select.ItemIndicator>
 
-                  <Image 
-                    src={language.flag} 
-                    alt={`${language.name} flag`} 
-                    width={20} 
-                    height={15} 
+                  <Image
+                    src={language.flag}
+                    alt={`${language.name} flag`}
+                    width={20}
+                    height={15}
                     className="rounded-sm"
                   />
                   <Select.ItemText>{language.name}</Select.ItemText>
