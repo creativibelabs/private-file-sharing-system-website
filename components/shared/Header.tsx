@@ -30,7 +30,7 @@ export default function Header({ locale }: { locale: string }) {
                                     <li key={index}>
                                         <Link
                                             href={`/${locale}${nav.path}`}
-                                            className=" transition-colors text-sm font-medium px-13 py-2.5 inline-block  hover:text-white hover:bg-gradient-to-r from-emerald-900/40 to-emerald-600/30  rounded-xl text-gray-200 "
+                                            className=" transition-colors text-sm font-medium px-13 py-2.5 inline-block  hover:text-white hover:bg-gradient-to-r from-emerald-600/60 to-emerald-900/40   hover:to-emerald-500/20  rounded-xl text-gray-200 "
                                         >
                                             {nav.title}
                                         </Link>
@@ -46,7 +46,7 @@ export default function Header({ locale }: { locale: string }) {
                         <LanguageSelector locale={locale} />
                         <Link
                             href={`/${locale}/login`}
-                            className="flex items-center justify-center px-6 py-2 text-sm font-medium rounded-xl text-white border border-emerald-500 bg-gradient-to-r from-emerald-900 to-emerald-600/90 hover:from-emerald-400 hover:to-emerald-500 transition-all duration-300 shadow-sm"
+                            className="flex items-center justify-center px-6 py-2 text-sm font-medium rounded-xl text-white border border-emerald-500 bg-gradient-to-b from-emerald-600/60 to-emerald-900/40 backdrop-blur-lg  hover:to-emerald-500/50 transition-all duration-300 shadow-sm"
                         >
                             Login
                         </Link>
