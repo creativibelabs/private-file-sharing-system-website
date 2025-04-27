@@ -1,8 +1,10 @@
 import Tabs from "@/components/Pricing/Tabs";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import React from "react";
 
-const PricingPage = () => {
+const PricingPage = async () => {
+  const t = await getTranslations("PricingPage");
   return (
     <main
       style={{
@@ -13,11 +15,10 @@ const PricingPage = () => {
     >
       <div className="flex flex-col items-center text-center md:pt-35 pt-25 mb-10">
         <h1 className="text-4xl md:text-6xl font-extrabold md:w-[671px] w-full">
-          Flexible Plans for Every User
+          {t("title")}
         </h1>
         <p className="mt-3 md:w-90 w-full">
-          Choose The Storage Plan That Fits Your Needs — Always Private, Always
-          Secure
+        {t("subtitle")}
         </p>
       </div>
       <Tabs />

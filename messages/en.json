@@ -3,7 +3,236 @@
         "title_1": "Your Private Cloud.",
         "title_2": "Secure, Simple, Yours.",
         "subtitle_1": "Upload, Share, And Manage Your Files",
-        "subtitle_2": "With Full Privacy  And Zero Compromises.",
-        "about": "Go to about page"
+        "subtitle_2": "With Full Privacy And Zero Compromises.",
+        "about": "Go to about page",
+        "feature": {
+            "h2": "Powerful Features At Your Fingertips."
+        },
+        "getStarted": {
+            "h3_1": "Get Started in Minutes",
+            "s1": "Secure your data in minutes with seamless upload,",
+            "s2": "-management, and instant access.",
+            "h3_2": "See Why Users Choose Us",
+            "p": "Hear from individuals and teams who trust us to protect what matters most."
+        }
+    },
+    "PricingPage": {
+        "title": "Flexible Plans for Every User",
+        "subtitle": "Choose The Storage Plan That Fits Your Needs — Always Private, Always Secure",
+        "savePercentage": "Save 20%",
+        "tabs": {
+            "monthly": {
+                "title": "Pay Monthly",
+                "plans": [
+                    {
+                        "title": "Basic",
+                        "price": "Free",
+                        "desc": "Get started for free",
+                        "msg": "What you will get",
+                        "features": [
+                            {
+                                "feature": "5 GB Storage"
+                            },
+                            {
+                                "feature": "Basic Sharing"
+                            },
+                            {
+                                "feature": "Email Support"
+                            }
+                        ],
+                        "buttonText": "Sign Up Free"
+                    },
+                    {
+                        "title": "Starter",
+                        "price": "$4.99",
+                        "period": "/month",
+                        "desc": "Essential features",
+                        "msg": "What you will get",
+                        "features": [
+                            {
+                                "feature": "10 GB Storage"
+                            },
+                            {
+                                "feature": "Advanced Sharing"
+                            },
+                            {
+                                "feature": "File Encryption"
+                            }
+                        ],
+                        "buttonText": "Get Started"
+                    },
+                    {
+                        "title": "Pro",
+                        "price": "$9.99",
+                        "period": "/month",
+                        "desc": "Power + Security for Individuals",
+                        "msg": "What you will get",
+                        "features": [
+                            {
+                                "feature": "50 GB Storage"
+                            },
+                            {
+                                "feature": "Advanced Sharing"
+                            },
+                            {
+                                "feature": "File Encryption"
+                            },
+                            {
+                                "feature": "Priority Support"
+                            },
+                            {
+                                "feature": "Advanced Security"
+                            }
+                        ],
+                        "buttonText": "Get Started",
+                        "popular": true
+                    },
+                    {
+                        "title": "Enterprise",
+                        "price": "Custom",
+                        "desc": "Built for Teams & Businesses",
+                        "msg": "What you will get",
+                        "features": [
+                            {
+                                "feature": "Unlimited Storage"
+                            },
+                            {
+                                "feature": "Team Sharing"
+                            },
+                            {
+                                "feature": "Advanced Encryption"
+                            }
+                        ],
+                        "buttonText": "Contact Sales"
+                    }
+                ]
+            },
+            "yearly": {
+                "title": "Pay Yearly",
+                "plans": [
+                    {
+                        "title": "Basic",
+                        "price": "Free",
+                        "desc": "Get started for free",
+                        "msg": "What you will get",
+                        "features": [
+                            {
+                                "feature": "5 GB Storage"
+                            },
+                            {
+                                "feature": "Basic Sharing"
+                            },
+                            {
+                                "feature": "Email Support"
+                            }
+                        ],
+                        "buttonText": "Sign Up Free"
+                    },
+                    {
+                        "title": "Starter",
+                        "price": "$49.99",
+                        "period": "/year",
+                        "desc": "Essential features (2 months free)",
+                        "msg": "What you will get",
+                        "features": [
+                            {
+                                "feature": "10 GB Storage"
+                            },
+                            {
+                                "feature": "Advanced Sharing"
+                            },
+                            {
+                                "feature": "File Encryption"
+                            }
+                        ],
+                        "buttonText": "Get Started"
+                    },
+                    {
+                        "title": "Pro",
+                        "price": "$99.99",
+                        "period": "/year",
+                        "desc": "Power + Security for Individuals",
+                        "msg": "What you will get",
+                        "features": [
+                            {
+                                "feature": "50 GB Storage"
+                            },
+                            {
+                                "feature": "Advanced Sharing"
+                            },
+                            {
+                                "feature": "File Encryption"
+                            },
+                            {
+                                "feature": "Priority Support"
+                            },
+                            {
+                                "feature": "Advanced Security"
+                            }
+                        ],
+                        "buttonText": "Get Started",
+                        "popular": true
+                    },
+                    {
+                        "title": "Enterprise",
+                        "price": "Custom",
+                        "desc": "Built for Teams & Businesses",
+                        "msg": "What you will get",
+                        "features": [
+                            {
+                                "feature": "Unlimited Storage"
+                            },
+                            {
+                                "feature": "Team Sharing"
+                            },
+                            {
+                                "feature": "Advanced Encryption"
+                            },
+                            {
+                                "feature": "24/7 Support"
+                            }
+                        ],
+                        "buttonText": "Contact Sales"
+                    }
+                ]
+            }
+        }
+    },
+    "SupportPage": {
+        "h1": "Need Help?",
+        "h2": "We're Here for You.",
+        "p1": "Find Quick Answers, Helpful Guides, Or Contact Our Support",
+        "p2": "Team - Your Privacy And Experience Are Our Top Priorities.",
+        "searchBtn": "Search",
+        "h3": " Frequently Asked Questions",
+        "faqs": [
+            {
+                "question": "How do I reset my password?",
+                "answer": "To reset your password, click on the 'Forgot Password' link on the login page. You'll receive an email with instructions to create a new password."
+            },
+            {
+                "question": "How can I update my account information?",
+                "answer": "You can update your account information by navigating to 'My Account' in the top right corner after logging in. From there, you can edit your profile details."
+            },
+            {
+                "question": "What payment methods do you accept?",
+                "answer": "We accept credit/debit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for most regions."
+            },
+            {
+                "question": "How do I contact customer support?",
+                "answer": "You can contact our customer support team through email at support@example.com or by using the contact form in the 'Contact Us' section. Our support hours are 24/7."
+            }
+        ],
+        "troubleshooting": {
+            "uploadFileIssues": "Upload & File Issues",
+            "sharingLinks": "Sharing & Links",
+            "securityPrivacy": "Security & Privacy",
+            "billingSubscription": "Billing & Subscription",
+            "accountManagement": "Account Management",
+            "backupDataRecovery": "Backup & Data Recovery",
+            "navigationHelp": "Navigation Help",
+            "integrationsExternalAccess": "Integrations & External Access"
+        },
+        "h3_2": "Troubleshooting"
     }
 }

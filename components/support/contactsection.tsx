@@ -25,7 +25,7 @@ const ContactForm: React.FC = () => {
                 <h2 className="text-2xl md:text-5xl font-bold text-center text-white mb-10">
                     Tell Us Your Questions
                 </h2>
-                <div className="absolute flex justify-end -top-130 left-4 md:left-24.5 w-full overflow-hidden">
+                <div className="absolute flex justify-end -top-130 left-4 md:left-24.5 w-full overflow-hidden -z-1">
                     <img src="/images/icons/left-shad's.png" alt="Left Shadow" width={1000} height={1000}  />
                 </div>
                 <div className="absolute flex justify-end  -bottom-101 -left-110 w-full ">
