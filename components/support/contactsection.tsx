@@ -25,7 +25,7 @@ const ContactForm: React.FC = () => {
                 <h2 className="text-2xl md:text-5xl font-bold text-center text-white mb-10">
                     Tell Us Your Questions
                 </h2>
-                <div className="absolute flex justify-end -top-130 left-4 md:left-24.5 w-full overflow-hidden -z-1">
+                <div className="absolute flex justify-end -top-130 left-4 md:left-14 lg:left-24.5 w-full overflow-hidden -z-1">
                     <img src="/images/icons/left-shad's.png" alt="Left Shadow" width={1000} height={1000}  />
                 </div>
                 <div className="absolute flex justify-end -z-1 -bottom-101 -left-110 w-full ">
@@ -152,7 +152,7 @@ const ContactForm: React.FC = () => {
                             </button>
                         </div>
                         <Image
-                            src="/images/icons/Message_icon.png" // Add your image URL here
+                            src="/images/icons/Message_icon.png"
                             alt="Billing Icon"
                             width={150}
                             height={150}
@@ -169,7 +169,7 @@ const ContactForm: React.FC = () => {
                             </button>
                         </div>
                         <Image
-                            src="/images/icons/Phone_icon.png" // Add your image URL here
+                            src="/images/icons/Phone_icon.png" 
                             alt="Technical Support Icon"
                             width={70}
                             height={70}
@@ -186,7 +186,7 @@ const ContactForm: React.FC = () => {
                             </button>
                         </div>
                         <Image
-                            src="/images/icons/Mail_icon.png" // Add your image URL here
+                            src="/images/icons/Mail_icon.png" 
                             alt="Account Icon"
                             width={150}
                             height={150}
@@ -200,7 +200,7 @@ const ContactForm: React.FC = () => {
                     <div className="flex items-center justify-center">
                         {/* Left Icon */}
                         <Image
-                            src="/images/icons/quote-left.png" // Add your image URL here
+                            src="/images/icons/quote-left.png" 
                             alt="Left Icon"
                             width={100}
                             height={100}
@@ -213,7 +213,7 @@ const ContactForm: React.FC = () => {
 
                         {/* Right Icon */}
                         <Image
-                            src="/images/icons/quote-right.png" // Add your image URL here
+                            src="/images/icons/quote-right.png" 
                             alt="Right Icon"
                             width={100}
                             height={100}
