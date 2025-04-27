@@ -1,6 +1,7 @@
 // components/PowerfulFeatures.tsx
 import React from 'react';
 import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
 
 interface FeatureIconProps {
     imageSrc: string;
@@ -29,7 +30,9 @@ const FeatureIcon: React.FC<FeatureIconProps> = ({ imageSrc, top, left, right, b
 };
 
 
-const PowerfulFeatures: React.FC = () => {
+const PowerfulFeatures = async () => {
+    const t = await getTranslations("HomePage.feature");
+
     return (
         <section className="py-6 px-4 text-white relative overflow-hidden">
             {/* Main heading */}
@@ -39,7 +42,7 @@ const PowerfulFeatures: React.FC = () => {
 
 
             <div className="text-center">
-                <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold">Powerful Features <br />At Your Fingertips.</h2>
+                <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold w-full md:max-w-110 mx-auto">{t("h2")}</h2>
             </div>
             <div className="relative mx-auto w-full max-w-3xl aspect-square">
                 <div className="relative w-full h-full">

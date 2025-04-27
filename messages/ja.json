@@ -1,9 +1,180 @@
 {
     "HomePage": {
-        "title_1": "あなたのプライベートクラウド。",
-        "title_2": "安全、シンプル、あなたのもの。",
+        "title_1": "あなたのプライベートクラウド",
+        "title_2": "安全、シンプル、あなた専用",
         "subtitle_1": "ファイルのアップロード、共有、管理",
-        "subtitle_2": "完全なプライバシー  妥協なし。",
-        "about": "アバウトページへ"
-    }
-} 
+        "subtitle_2": "完全なプライバシーと妥協のない安全性",
+        "about": "アバウトページへ",
+        "feature": {
+            "h2": "強力な機能がすぐそこに"
+        },
+        "getStarted": {
+            "h3_1": "数分で始められます",
+            "s1": "シームレスなアップロードでデータを保護、",
+            "s2": "管理と即時アクセスが可能",
+            "h3_2": "選ばれる理由",
+            "p": "最も重要なものを保護するために私たちを信頼する個人やチームの声"
+        }
+    },
+    "PricingPage": {
+        "title": "すべてのユーザーに柔軟なプラン",
+        "subtitle": "ニーズに合ったストレージプランを選択 — 常にプライベート、常に安全",
+        "savePercentage": "20%お得",
+        "tabs": {
+            "monthly": {
+                "title": "月額払い",
+                "plans": [
+                    {
+                        "title": "ベーシック",
+                        "price": "無料",
+                        "desc": "無料で始められます",
+                        "msg": "含まれる機能",
+                        "features": [
+                            { "feature": "5GB ストレージ" },
+                            { "feature": "基本共有" },
+                            { "feature": "メールサポート" }
+                        ],
+                        "buttonText": "無料登録"
+                    },
+                    {
+                        "title": "スターター",
+                        "price": "¥550",
+                        "period": "/月",
+                        "desc": "基本機能",
+                        "msg": "含まれる機能",
+                        "features": [
+                            { "feature": "10GB ストレージ" },
+                            { "feature": "高度な共有" },
+                            { "feature": "ファイル暗号化" }
+                        ],
+                        "buttonText": "始める"
+                    },
+                    {
+                        "title": "プロ",
+                        "price": "¥1,100",
+                        "period": "/月",
+                        "desc": "個人向けパワー＆セキュリティ",
+                        "msg": "含まれる機能",
+                        "features": [
+                            { "feature": "50GB ストレージ" },
+                            { "feature": "高度な共有" },
+                            { "feature": "ファイル暗号化" },
+                            { "feature": "優先サポート" },
+                            { "feature": "高度なセキュリティ" }
+                        ],
+                        "buttonText": "始める",
+                        "popular": true
+                    },
+                    {
+                        "title": "エンタープライズ",
+                        "price": "カスタム",
+                        "desc": "チーム＆ビジネス向け",
+                        "msg": "含まれる機能",
+                        "features": [
+                            { "feature": "無制限ストレージ" },
+                            { "feature": "チーム共有" },
+                            { "feature": "高度な暗号化" }
+                        ],
+                        "buttonText": "営業に相談"
+                    }
+                ]
+            },
+            "yearly": {
+                "title": "年額払い",
+                "plans": [
+                    {
+                        "title": "ベーシック",
+                        "price": "無料",
+                        "desc": "無料で始められます",
+                        "msg": "含まれる機能",
+                        "features": [
+                            { "feature": "5GB ストレージ" },
+                            { "feature": "基本共有" },
+                            { "feature": "メールサポート" }
+                        ],
+                        "buttonText": "無料登録"
+                    },
+                    {
+                        "title": "スターター",
+                        "price": "¥5,500",
+                        "period": "/年",
+                        "desc": "基本機能 (2ヶ月分無料)",
+                        "msg": "含まれる機能",
+                        "features": [
+                            { "feature": "10GB ストレージ" },
+                            { "feature": "高度な共有" },
+                            { "feature": "ファイル暗号化" }
+                        ],
+                        "buttonText": "始める"
+                    },
+                    {
+                        "title": "プロ",
+                        "price": "¥11,000",
+                        "period": "/年",
+                        "desc": "個人向けパワー＆セキュリティ",
+                        "msg": "含まれる機能",
+                        "features": [
+                            { "feature": "50GB ストレージ" },
+                            { "feature": "高度な共有" },
+                            { "feature": "ファイル暗号化" },
+                            { "feature": "優先サポート" },
+                            { "feature": "高度なセキュリティ" }
+                        ],
+                        "buttonText": "始める",
+                        "popular": true
+                    },
+                    {
+                        "title": "エンタープライズ",
+                        "price": "カスタム",
+                        "desc": "チーム＆ビジネス向け",
+                        "msg": "含まれる機能",
+                        "features": [
+                            { "feature": "無制限ストレージ" },
+                            { "feature": "チーム共有" },
+                            { "feature": "高度な暗号化" },
+                            { "feature": "24/7 サポート" }
+                        ],
+                        "buttonText": "営業に相談"
+                    }
+                ]
+            }
+        }
+    },
+    "SupportPage": {
+    "h1": "お困りですか？",
+    "h2": "私たちがサポートします。",
+    "p1": "すぐに答えを見つける、役立つガイドを読む、またはサポートチームに連絡してください",
+    "p2": "プライバシーと体験は私たちの最優先事項です。",
+    "searchBtn": "検索",
+    "h3": "よくある質問",
+    "faqs": [
+      {
+        "question": "パスワードをリセットするにはどうすればよいですか？",
+        "answer": "ログインページの「パスワードを忘れた場合」リンクをクリックしてください。新しいパスワードを作成する手順が記載されたメールが届きます。"
+      },
+      {
+        "question": "アカウント情報を更新するには？",
+        "answer": "ログイン後、右上の「マイアカウント」からプロフィール詳細を編集できます。"
+      },
+      {
+        "question": "利用できる支払い方法は何ですか？",
+        "answer": "クレジット/デビットカード（Visa、MasterCard、American Express）、PayPal、銀行振込に対応しています。"
+      },
+      {
+        "question": "カスタマーサポートへの連絡方法は？",
+        "answer": "support@example.com にメールするか、「お問い合わせ」セクションのフォームをご利用ください。サポートは24時間365日対応しています。"
+      }
+    ],
+    "troubleshooting": {
+      "uploadFileIssues": "アップロードとファイルの問題",
+      "sharingLinks": "共有とリンク",
+      "securityPrivacy": "セキュリティとプライバシー",
+      "billingSubscription": "請求とサブスクリプション",
+      "accountManagement": "アカウント管理",
+      "backupDataRecovery": "バックアップとデータ復旧",
+      "navigationHelp": "ナビゲーションヘルプ",
+      "integrationsExternalAccess": "統合と外部アクセス"
+    },
+    "h3_2": "トラブルシューティング"
+  }
+}
