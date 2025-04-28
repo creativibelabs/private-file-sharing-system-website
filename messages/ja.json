@@ -30,9 +30,15 @@
                         "desc": "無料で始められます",
                         "msg": "含まれる機能",
                         "features": [
-                            { "feature": "5GB ストレージ" },
-                            { "feature": "基本共有" },
-                            { "feature": "メールサポート" }
+                            {
+                                "feature": "5GB ストレージ"
+                            },
+                            {
+                                "feature": "基本共有"
+                            },
+                            {
+                                "feature": "メールサポート"
+                            }
                         ],
                         "buttonText": "無料登録"
                     },
@@ -43,9 +49,15 @@
                         "desc": "基本機能",
                         "msg": "含まれる機能",
                         "features": [
-                            { "feature": "10GB ストレージ" },
-                            { "feature": "高度な共有" },
-                            { "feature": "ファイル暗号化" }
+                            {
+                                "feature": "10GB ストレージ"
+                            },
+                            {
+                                "feature": "高度な共有"
+                            },
+                            {
+                                "feature": "ファイル暗号化"
+                            }
                         ],
                         "buttonText": "始める"
                     },
@@ -56,11 +68,21 @@
                         "desc": "個人向けパワー＆セキュリティ",
                         "msg": "含まれる機能",
                         "features": [
-                            { "feature": "50GB ストレージ" },
-                            { "feature": "高度な共有" },
-                            { "feature": "ファイル暗号化" },
-                            { "feature": "優先サポート" },
-                            { "feature": "高度なセキュリティ" }
+                            {
+                                "feature": "50GB ストレージ"
+                            },
+                            {
+                                "feature": "高度な共有"
+                            },
+                            {
+                                "feature": "ファイル暗号化"
+                            },
+                            {
+                                "feature": "優先サポート"
+                            },
+                            {
+                                "feature": "高度なセキュリティ"
+                            }
                         ],
                         "buttonText": "始める",
                         "popular": true
@@ -71,9 +93,15 @@
                         "desc": "チーム＆ビジネス向け",
                         "msg": "含まれる機能",
                         "features": [
-                            { "feature": "無制限ストレージ" },
-                            { "feature": "チーム共有" },
-                            { "feature": "高度な暗号化" }
+                            {
+                                "feature": "無制限ストレージ"
+                            },
+                            {
+                                "feature": "チーム共有"
+                            },
+                            {
+                                "feature": "高度な暗号化"
+                            }
                         ],
                         "buttonText": "営業に相談"
                     }
@@ -88,9 +116,15 @@
                         "desc": "無料で始められます",
                         "msg": "含まれる機能",
                         "features": [
-                            { "feature": "5GB ストレージ" },
-                            { "feature": "基本共有" },
-                            { "feature": "メールサポート" }
+                            {
+                                "feature": "5GB ストレージ"
+                            },
+                            {
+                                "feature": "基本共有"
+                            },
+                            {
+                                "feature": "メールサポート"
+                            }
                         ],
                         "buttonText": "無料登録"
                     },
@@ -101,9 +135,15 @@
                         "desc": "基本機能 (2ヶ月分無料)",
                         "msg": "含まれる機能",
                         "features": [
-                            { "feature": "10GB ストレージ" },
-                            { "feature": "高度な共有" },
-                            { "feature": "ファイル暗号化" }
+                            {
+                                "feature": "10GB ストレージ"
+                            },
+                            {
+                                "feature": "高度な共有"
+                            },
+                            {
+                                "feature": "ファイル暗号化"
+                            }
                         ],
                         "buttonText": "始める"
                     },
@@ -114,11 +154,21 @@
                         "desc": "個人向けパワー＆セキュリティ",
                         "msg": "含まれる機能",
                         "features": [
-                            { "feature": "50GB ストレージ" },
-                            { "feature": "高度な共有" },
-                            { "feature": "ファイル暗号化" },
-                            { "feature": "優先サポート" },
-                            { "feature": "高度なセキュリティ" }
+                            {
+                                "feature": "50GB ストレージ"
+                            },
+                            {
+                                "feature": "高度な共有"
+                            },
+                            {
+                                "feature": "ファイル暗号化"
+                            },
+                            {
+                                "feature": "優先サポート"
+                            },
+                            {
+                                "feature": "高度なセキュリティ"
+                            }
                         ],
                         "buttonText": "始める",
                         "popular": true
@@ -129,10 +179,18 @@
                         "desc": "チーム＆ビジネス向け",
                         "msg": "含まれる機能",
                         "features": [
-                            { "feature": "無制限ストレージ" },
-                            { "feature": "チーム共有" },
-                            { "feature": "高度な暗号化" },
-                            { "feature": "24/7 サポート" }
+                            {
+                                "feature": "無制限ストレージ"
+                            },
+                            {
+                                "feature": "チーム共有"
+                            },
+                            {
+                                "feature": "高度な暗号化"
+                            },
+                            {
+                                "feature": "24/7 サポート"
+                            }
                         ],
                         "buttonText": "営業に相談"
                     }
@@ -141,40 +199,59 @@
         }
     },
     "SupportPage": {
-    "h1": "お困りですか？",
-    "h2": "私たちがサポートします。",
-    "p1": "すぐに答えを見つける、役立つガイドを読む、またはサポートチームに連絡してください",
-    "p2": "プライバシーと体験は私たちの最優先事項です。",
-    "searchBtn": "検索",
-    "h3": "よくある質問",
-    "faqs": [
-      {
-        "question": "パスワードをリセットするにはどうすればよいですか？",
-        "answer": "ログインページの「パスワードを忘れた場合」リンクをクリックしてください。新しいパスワードを作成する手順が記載されたメールが届きます。"
-      },
-      {
-        "question": "アカウント情報を更新するには？",
-        "answer": "ログイン後、右上の「マイアカウント」からプロフィール詳細を編集できます。"
-      },
-      {
-        "question": "利用できる支払い方法は何ですか？",
-        "answer": "クレジット/デビットカード（Visa、MasterCard、American Express）、PayPal、銀行振込に対応しています。"
-      },
-      {
-        "question": "カスタマーサポートへの連絡方法は？",
-        "answer": "support@example.com にメールするか、「お問い合わせ」セクションのフォームをご利用ください。サポートは24時間365日対応しています。"
-      }
-    ],
-    "troubleshooting": {
-      "uploadFileIssues": "アップロードとファイルの問題",
-      "sharingLinks": "共有とリンク",
-      "securityPrivacy": "セキュリティとプライバシー",
-      "billingSubscription": "請求とサブスクリプション",
-      "accountManagement": "アカウント管理",
-      "backupDataRecovery": "バックアップとデータ復旧",
-      "navigationHelp": "ナビゲーションヘルプ",
-      "integrationsExternalAccess": "統合と外部アクセス"
-    },
-    "h3_2": "トラブルシューティング"
-  }
+        "h1": "お困りですか？",
+        "h2": "私たちがサポートします。",
+        "p1": "すぐに答えを見つける、役立つガイドを読む、またはサポートチームに連絡してください",
+        "p2": "プライバシーと体験は私たちの最優先事項です。",
+        "searchBtn": "検索",
+        "h3": "よくある質問",
+        "faqs": [
+            {
+                "question": "パスワードをリセットするにはどうすればよいですか？",
+                "answer": "ログインページの「パスワードを忘れた場合」リンクをクリックしてください。新しいパスワードを作成する手順が記載されたメールが届きます。"
+            },
+            {
+                "question": "アカウント情報を更新するには？",
+                "answer": "ログイン後、右上の「マイアカウント」からプロフィール詳細を編集できます。"
+            },
+            {
+                "question": "利用できる支払い方法は何ですか？",
+                "answer": "クレジット/デビットカード（Visa、MasterCard、American Express）、PayPal、銀行振込に対応しています。"
+            },
+            {
+                "question": "カスタマーサポートへの連絡方法は？",
+                "answer": "support@example.com にメールするか、「お問い合わせ」セクションのフォームをご利用ください。サポートは24時間365日対応しています。"
+            }
+        ],
+        "troubleshooting": {
+            "uploadFileIssues": "アップロードとファイルの問題",
+            "sharingLinks": "共有とリンク",
+            "securityPrivacy": "セキュリティとプライバシー",
+            "billingSubscription": "請求とサブスクリプション",
+            "accountManagement": "アカウント管理",
+            "backupDataRecovery": "バックアップとデータ復旧",
+            "navigationHelp": "ナビゲーションヘルプ",
+            "integrationsExternalAccess": "統合と外部アクセス"
+        },
+        "h3_2": "トラブルシューティング",
+        "h2_2": "ご質問をお聞かせください",
+        "h2_3": "請求および技術的な問題について",
+        "h3_3": "私たちはお客様の安全を守ることに尽力し、",
+        "h3_4": "常にご満足いただけるよう努めています",
+        "submitBtn": "送信",
+        "cards": [
+            {
+                "title": "ライブチャット",
+                "btnText": "チャットする"
+            },
+            {
+                "title": "連絡先番号",
+                "btnText": "電話する"
+            },
+            {
+                "title": "アカウントの問題",
+                "btnText": "メールする"
+            }
+        ]
+    }
 }

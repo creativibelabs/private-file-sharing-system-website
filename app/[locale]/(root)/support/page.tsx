@@ -12,8 +12,8 @@ import {
   Compass,
   Code
 } from 'lucide-react';
-import ContactForm from "@/components/support/contactsection";
 import { useTranslations } from 'next-intl';
+import ContactForm from "@/components/support/contactSection";
 
 export default function SupportPage() {
   const t = useTranslations("SupportPage");

@@ -1,13 +1,46 @@
-
+"use client"
+import { Contact } from 'lucide-react';
 import Image from 'next/image';
 import React, { useState } from 'react';
+import ContactCard from './contactCard';
+import { useTranslations } from 'next-intl';
+
+
 
 const ContactForm: React.FC = () => {
+    const t = useTranslations("SupportPage");
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [issueType, setIssueType] = useState('');
     const [message, setMessage] = useState('');
     const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const cardData = [
+        {
+            title: t("cards.0.title"),
+            btnText: t("cards.0.btnText"),
+            src: '/images/icons/Message_icon.png',
+            alt: 'Billing Icon',
+            imgWidth: 150,
+            imgHeight: 150,
+        },
+        {
+            title: t("cards.1.title"),
+            btnText: t("cards.1.btnText"),
+            src: '/images/icons/Phone_icon.png',
+            alt: 'Technical Support Icon',
+            imgWidth: 70,
+            imgHeight: 70,
+        },
+        {
+            title: t("cards.2.title"),
+            btnText: t("cards.2.btnText"),
+            src: '/images/icons/Mail_icon.png',
+            alt: 'Account Icon',
+            imgWidth: 150,
+            imgHeight: 150,
+        }
+    ]
 
     const handleIssueTypeChange = (type: string) => {
         setIssueType(type);
@@ -23,7 +56,7 @@ const ContactForm: React.FC = () => {
         <section className="min-h-screen">
             <div className="max-w-6xl mx-auto p-8 relative rounded-xl">
                 <h2 className="text-2xl md:text-5xl font-bold text-center text-white mb-10">
-                    Tell Us Your Questions
+                {t("h2_2")}
                 </h2>
                 <div className="absolute flex justify-end -top-130 left-4 md:left-14 lg:left-24.5 w-full overflow-hidden -z-1">
                     <img src="/images/icons/left-shad's.png" alt="Left Shadow" width={1000} height={1000}  />
@@ -128,7 +161,7 @@ const ContactForm: React.FC = () => {
                             type="submit"
                             className="text-white border border-emerald-500 bg-gradient-to-r from-emerald-600/50 to-emerald-900/50 hover:from-emerald-800/50 hover:to-emerald-600/50 transition-all duration-300 shadow-sm  items-center px-6 md:px-40 py-3 font-medium rounded-full backdrop-blur-2xl"
                         >
-                            Submit
+                            {t("submitBtn")}
                         </button>
                     </div>
                 </form>
@@ -138,61 +171,25 @@ const ContactForm: React.FC = () => {
             <section className="py-12">
                 {/* Heading for Billing & Technical Issues */}
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-5xl font-bold">For Billing & Technical Issues</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold">{t("h2_3")}</h2>
                 </div>
 
                 {/* Cards Grid Layout */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-                    {/* Card 1 */}
-                    <div className="p-6 flex items-center justify-between rounded-2xl border border-emerald-300 backdrop-blur-sm  relative transition-all duration-300 hover:shadow-[0_4px_30px_rgba(16,185,129,0.4)] bg-gradient-to-r from-emerald-600/50 to-emerald-900/50 ">
-                        <div>
-                            <h3 className="text-xl font-semibold">Live Chat</h3>
-                            <button className="mt-4 text-white border px-4 py-2 rounded-full">
-                                Chat with us
-                            </button>
-                        </div>
-                        <Image
-                            src="/images/icons/Message_icon.png"
-                            alt="Billing Icon"
-                            width={150}
-                            height={150}
-                            className="ml-4 "
-                        />
-                    </div>
-
-                    {/* Card 2 */}
-                    <div className="p-6 flex items-center justify-between rounded-2xl border border-emerald-300 backdrop-blur-sm  relative transition-all duration-300 hover:shadow-[0_4px_30px_rgba(16,185,129,0.4)] bg-gradient-to-r from-emerald-600/50 to-emerald-900/50 "   >
-                        <div>
-                            <h3 className="text-xl font-semibold">Contact Number</h3>
-                            <button className="mt-4 text-white border px-6 py-2 rounded-full">
-                                Call us
-                            </button>
-                        </div>
-                        <Image
-                            src="/images/icons/Phone_icon.png" 
-                            alt="Technical Support Icon"
-                            width={70}
-                            height={70}
-                            className="ml-4"
-                        />
-                    </div>
-
-                    {/* Card 3 */}
-                    <div className="p-6 flex items-center justify-between rounded-2xl border border-emerald-300 backdrop-blur-sm  relative transition-all duration-300 hover:shadow-[0_4px_30px_rgba(16,185,129,0.4)] bg-gradient-to-r from-emerald-600/50 to-emerald-900/50 ">
-                        <div>
-                            <h3 className="text-xl font-semibold">Account Issues</h3>
-                            <button className="mt-4 text-white px-4 py-2 rounded-full">
-                                Email us
-                            </button>
-                        </div>
-                        <Image
-                            src="/images/icons/Mail_icon.png" 
-                            alt="Account Icon"
-                            width={150}
-                            height={150}
-                            className="ml-4"
-                        />
-                    </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">    
+                    {/* Render Cards Dynamically */}
+                    {cardData.map((card, index) => {
+                        return(
+                            <ContactCard 
+                                key={index}
+                                title={card.title}
+                                btnText={card.btnText}
+                                src={card.src}
+                                alt={card.alt}
+                                imgWidth={card.imgWidth}
+                                imgHeight={card.imgHeight}
+                            />
+                        )
+                    })}
                 </div>
 
                 {/* Centered Section with Icons */}
@@ -207,8 +204,8 @@ const ContactForm: React.FC = () => {
                             className="mr-4"
                         />
                         <div>
-                            <h3 className="md:text-5xl text-lg font-bold">We're committed to your security and</h3>
-                            <h3 className="md:text-5xl text-lg font-bold">satisfaction every step of the way.</h3>
+                            <h3 className="md:text-5xl text-lg font-bold">{t("h3_3")}</h3>
+                            <h3 className="md:text-5xl text-lg font-bold">{t("h3_4")}</h3>
                         </div>
 
                         {/* Right Icon */}

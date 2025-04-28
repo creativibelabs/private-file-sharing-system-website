@@ -41,7 +41,7 @@ export default function FAQPage() {
       backgroundSize: "cover",
     
     }}
-      className="min-h-screen p-4 text-white " >
+      className="min-h-screen text-white " >
 
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6  pt-12 text-center"

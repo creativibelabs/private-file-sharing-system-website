@@ -233,6 +233,25 @@
             "navigationHelp": "Navigation Help",
             "integrationsExternalAccess": "Integrations & External Access"
         },
-        "h3_2": "Troubleshooting"
+        "h3_2": "Troubleshooting",
+        "h2_2": "Tell Us Your Questions",
+        "h2_3": "For Billing & Technical Issues",
+        "h3_3": "We're committed to your security and",
+        "h3_4": "satisfaction every step of the way.",
+        "submitBtn": "Submit",
+        "cards": [
+            {
+                "title": "Live Chat",
+                "btnText": "Chat with us"
+            },
+            {
+                "title": "Contact Number",
+                "btnText": "Call us"
+            },
+            {
+                "title": "Account Issues",
+                "btnText": "Email us"
+            }
+        ]
     }
 }

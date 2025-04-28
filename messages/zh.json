@@ -30,9 +30,15 @@
                         "desc": "免费开始使用",
                         "msg": "您将获得",
                         "features": [
-                            { "feature": "5GB 存储空间" },
-                            { "feature": "基础共享" },
-                            { "feature": "邮件支持" }
+                            {
+                                "feature": "5GB 存储空间"
+                            },
+                            {
+                                "feature": "基础共享"
+                            },
+                            {
+                                "feature": "邮件支持"
+                            }
                         ],
                         "buttonText": "免费注册"
                     },
@@ -43,9 +49,15 @@
                         "desc": "基础功能",
                         "msg": "您将获得",
                         "features": [
-                            { "feature": "10GB 存储空间" },
-                            { "feature": "高级共享" },
-                            { "feature": "文件加密" }
+                            {
+                                "feature": "10GB 存储空间"
+                            },
+                            {
+                                "feature": "高级共享"
+                            },
+                            {
+                                "feature": "文件加密"
+                            }
                         ],
                         "buttonText": "立即开始"
                     },
@@ -56,11 +68,21 @@
                         "desc": "个人用户的最佳选择",
                         "msg": "您将获得",
                         "features": [
-                            { "feature": "50GB 存储空间" },
-                            { "feature": "高级共享" },
-                            { "feature": "文件加密" },
-                            { "feature": "优先支持" },
-                            { "feature": "高级安全" }
+                            {
+                                "feature": "50GB 存储空间"
+                            },
+                            {
+                                "feature": "高级共享"
+                            },
+                            {
+                                "feature": "文件加密"
+                            },
+                            {
+                                "feature": "优先支持"
+                            },
+                            {
+                                "feature": "高级安全"
+                            }
                         ],
                         "buttonText": "立即开始",
                         "popular": true
@@ -71,9 +93,15 @@
                         "desc": "专为团队和企业设计",
                         "msg": "您将获得",
                         "features": [
-                            { "feature": "无限存储" },
-                            { "feature": "团队共享" },
-                            { "feature": "高级加密" }
+                            {
+                                "feature": "无限存储"
+                            },
+                            {
+                                "feature": "团队共享"
+                            },
+                            {
+                                "feature": "高级加密"
+                            }
                         ],
                         "buttonText": "联系销售"
                     }
@@ -88,9 +116,15 @@
                         "desc": "免费开始使用",
                         "msg": "您将获得",
                         "features": [
-                            { "feature": "5GB 存储空间" },
-                            { "feature": "基础共享" },
-                            { "feature": "邮件支持" }
+                            {
+                                "feature": "5GB 存储空间"
+                            },
+                            {
+                                "feature": "基础共享"
+                            },
+                            {
+                                "feature": "邮件支持"
+                            }
                         ],
                         "buttonText": "免费注册"
                     },
@@ -101,9 +135,15 @@
                         "desc": "基础功能 (节省2个月)",
                         "msg": "您将获得",
                         "features": [
-                            { "feature": "10GB 存储空间" },
-                            { "feature": "高级共享" },
-                            { "feature": "文件加密" }
+                            {
+                                "feature": "10GB 存储空间"
+                            },
+                            {
+                                "feature": "高级共享"
+                            },
+                            {
+                                "feature": "文件加密"
+                            }
                         ],
                         "buttonText": "立即开始"
                     },
@@ -114,11 +154,21 @@
                         "desc": "个人用户的最佳选择",
                         "msg": "您将获得",
                         "features": [
-                            { "feature": "50GB 存储空间" },
-                            { "feature": "高级共享" },
-                            { "feature": "文件加密" },
-                            { "feature": "优先支持" },
-                            { "feature": "高级安全" }
+                            {
+                                "feature": "50GB 存储空间"
+                            },
+                            {
+                                "feature": "高级共享"
+                            },
+                            {
+                                "feature": "文件加密"
+                            },
+                            {
+                                "feature": "优先支持"
+                            },
+                            {
+                                "feature": "高级安全"
+                            }
                         ],
                         "buttonText": "立即开始",
                         "popular": true
@@ -129,10 +179,18 @@
                         "desc": "专为团队和企业设计",
                         "msg": "您将获得",
                         "features": [
-                            { "feature": "无限存储" },
-                            { "feature": "团队共享" },
-                            { "feature": "高级加密" },
-                            { "feature": "24/7 支持" }
+                            {
+                                "feature": "无限存储"
+                            },
+                            {
+                                "feature": "团队共享"
+                            },
+                            {
+                                "feature": "高级加密"
+                            },
+                            {
+                                "feature": "24/7 支持"
+                            }
                         ],
                         "buttonText": "联系销售"
                     }
@@ -141,40 +199,59 @@
         }
     },
     "SupportPage": {
-    "h1": "需要帮助？",
-    "h2": "我们在这里为您服务。",
-    "p1": "快速找到答案、查看帮助指南或联系支持团队",
-    "p2": "您的隐私和体验是我们的首要任务。",
-    "searchBtn": "搜索",
-    "h3": "常见问题",
-    "faqs": [
-      {
-        "question": "如何重置我的密码？",
-        "answer": "在登录页面点击“忘记密码”链接。您将收到一封包含创建新密码说明的电子邮件。"
-      },
-      {
-        "question": "如何更新我的账户信息？",
-        "answer": "登录后，点击右上角的“我的账户”，即可编辑个人资料信息。"
-      },
-      {
-        "question": "你们接受哪些付款方式？",
-        "answer": "我们接受信用卡/借记卡（Visa、MasterCard、American Express）、PayPal 和银行转账。"
-      },
-      {
-        "question": "如何联系客户支持？",
-        "answer": "您可以通过 support@example.com 发送邮件，或使用“联系我们”部分的联系表单。我们的支持服务是24/7全天候的。"
-      }
-    ],
-    "troubleshooting": {
-      "uploadFileIssues": "上传和文件问题",
-      "sharingLinks": "分享和链接",
-      "securityPrivacy": "安全和隐私",
-      "billingSubscription": "账单和订阅",
-      "accountManagement": "账户管理",
-      "backupDataRecovery": "备份和数据恢复",
-      "navigationHelp": "导航帮助",
-      "integrationsExternalAccess": "集成和外部访问"
-    },
-    "h3_2": "故障排除"
-  }
+        "h1": "需要帮助？",
+        "h2": "我们在这里为您服务。",
+        "p1": "快速找到答案、查看帮助指南或联系支持团队",
+        "p2": "您的隐私和体验是我们的首要任务。",
+        "searchBtn": "搜索",
+        "h3": "常见问题",
+        "faqs": [
+            {
+                "question": "如何重置我的密码？",
+                "answer": "在登录页面点击“忘记密码”链接。您将收到一封包含创建新密码说明的电子邮件。"
+            },
+            {
+                "question": "如何更新我的账户信息？",
+                "answer": "登录后，点击右上角的“我的账户”，即可编辑个人资料信息。"
+            },
+            {
+                "question": "你们接受哪些付款方式？",
+                "answer": "我们接受信用卡/借记卡（Visa、MasterCard、American Express）、PayPal 和银行转账。"
+            },
+            {
+                "question": "如何联系客户支持？",
+                "answer": "您可以通过 support@example.com 发送邮件，或使用“联系我们”部分的联系表单。我们的支持服务是24/7全天候的。"
+            }
+        ],
+        "troubleshooting": {
+            "uploadFileIssues": "上传和文件问题",
+            "sharingLinks": "分享和链接",
+            "securityPrivacy": "安全和隐私",
+            "billingSubscription": "账单和订阅",
+            "accountManagement": "账户管理",
+            "backupDataRecovery": "备份和数据恢复",
+            "navigationHelp": "导航帮助",
+            "integrationsExternalAccess": "集成和外部访问"
+        },
+        "h3_2": "故障排除",
+        "h2_2": "告诉我们您的问题",
+        "h2_3": "关于账单和技术问题",
+        "h3_3": "我们致力于保障您的安全",
+        "h3_4": "并在每一步中确保您的满意",
+        "submitBtn": "提交",
+        "cards": [
+            {
+                "title": "在线聊天",
+                "btnText": "与我们聊天"
+            },
+            {
+                "title": "联系电话",
+                "btnText": "致电我们"
+            },
+            {
+                "title": "账户问题",
+                "btnText": "给我们发邮件"
+            }
+        ]
+    }
 }
