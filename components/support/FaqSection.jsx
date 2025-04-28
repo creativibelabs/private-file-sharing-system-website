@@ -1,27 +1,30 @@
+import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 import { ChevronDown } from 'react-feather';
 
-const faqs = [
-    {
-        question: 'What is a Payment Gateway?',
-        answer: 'This project is a dynamic dashboard showcasing various features like user authentication, post creation, and real-time updates using Firebase.',
-    },
-    {
-        question: 'Can I contribute to this project?',
-        answer: 'Yes, contributions are welcome! Just fork the repository, make your changes, and submit a pull request.',
-    },
-    {
-        question: 'Is this project mobile responsive?',
-        answer: 'Absolutely! The entire UI is built with responsiveness in mind using Tailwind CSS and React best practices.',
-    },
-    {
-        question: 'How is data stored in this project?',
-        answer: 'All user, post, and media data is stored and managed using Firebase Firestore and Storage.',
-    },
-];
 
 const FaqSection = () => {
     const [openFaq, setOpenFaq] = useState(null);
+    const t = useTranslations('FaqPage');
+
+    const faqs = [
+        {
+            question: t("faqSection.0.question"),
+            answer: t("faqSection.0.answer"),
+        },
+        {
+            question: t("faqSection.1.question"),
+            answer: t("faqSection.1.answer"),
+        },
+        {
+            question: t("faqSection.2.question"),
+            answer: t("faqSection.2.answer"),
+        },
+        {
+            question: t("faqSection.3.question"),
+            answer: t("faqSection.3.answer"),
+        }        
+    ];
 
     const toggleFaq = (index) => {
         setOpenFaq((prevIndex) => (prevIndex === index ? null : index));

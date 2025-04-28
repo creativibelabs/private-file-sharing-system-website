@@ -253,5 +253,56 @@
                 "btnText": "Email us"
             }
         ]
+    },
+    "FaqPage": {
+        "faqSection": [
+            {
+                "question": "What is a Payment Gateway?",
+                "answer": "This project is a dynamic dashboard showcasing various features like user authentication, post creation, and real-time updates using Firebase."
+            },
+            {
+                "question": "Can I contribute to this project?",
+                "answer": "Yes, contributions are welcome! Just fork the repository, make your changes, and submit a pull request."
+            },
+            {
+                "question": "Is this project mobile responsive?",
+                "answer": "Absolutely! The entire UI is built with responsiveness in mind using Tailwind CSS and React best practices."
+            },
+            {
+                "question": "How is data stored in this project?",
+                "answer": "All user, post, and media data is stored and managed using Firebase Firestore and Storage."
+            }
+        ],
+        "title": "Frequently Asked Questions",
+        "subTitle": "Find answers to common questions about your private cloud experience",
+        "h2": "Still have questions?",
+        "p1": "Contact support at",
+        "email": "support@yourdomain.com",
+        "p2": "or use the live chat.",
+        "chatBtn": "LIVE CHAT",
+        "categories": [
+            "General",
+            "Pricing",
+            "Support",
+            "Security"
+        ],
+        "faqs": [
+            {
+                "question": "What is a private cloud?",
+                "answer": "A private cloud is a cloud computing environment dedicated to a single organization."
+            },
+            {
+                "question": "How secure is my data?",
+                "answer": "Your data is encrypted in transit and at rest using industry best practices."
+            },
+            {
+                "question": "Can I upgrade my plan anytime?",
+                "answer": "Yes, you can upgrade or downgrade your plan from your dashboard anytime."
+            },
+            {
+                "question": "Do you offer 24/7 support?",
+                "answer": "Yes, our support team is available 24/7 via chat and email."
+            }
+        ]
     }
 }
