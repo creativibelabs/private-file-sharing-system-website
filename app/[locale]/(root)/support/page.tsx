@@ -14,9 +14,9 @@ import {
   MoveUpRight
 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import ContactForm from "@/components/support/contactSection";
 import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
+import ContactForm from "@/components/support/contactsection";
 
 
 export default function SupportPage() {

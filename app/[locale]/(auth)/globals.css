@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 200ms ease-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+
+/* body {
+  background-image: url(/public/images/bg-img.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-position: center;
+  scrollbar-gutter: stable;
+} */
+
+.gradient-overlay {
+  background: linear-gradient(to bottom, rgba(11, 38, 18, 0.5), rgba(11, 35, 18, 0.5));
+  /* Adjust the colors and opacity as needed */
+  position: absolute;
+  /* Ensure it overlays the content */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  /* Place it below the text */
+}
+
+
+
+
+@media (max-width: 640px) {
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .bg-mobile {
+    background-size: contain;
+    height: 600px;
+  }
+}
