@@ -1,5 +1,5 @@
-import BusinessSignup from '@/components/Auth/BusinessSignup';
+import AccountTypeSelection from '@/components/Auth/AccountTypeSelection';
 
-const AccountTypeSelection = () => <BusinessSignup />
+const SignUp = () => <AccountTypeSelection />
 
-export default AccountTypeSelection;
+export default SignUp;
