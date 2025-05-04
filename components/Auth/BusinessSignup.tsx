@@ -1,4 +1,8 @@
+import { useLocale } from "next-intl";
+import Link from "next/link";
+
 export default function BusinessSignup() {
+  const locale = useLocale(); 
   return (
     <main className="min-h-screen bg-cover  relative" style={{ backgroundImage: "url('/images/auth/business-bg.png')" }}>
       <div className="min-h-screen flex flex-col md:flex-row justify-center items-center px-4 md:px-16 py-10 gap-16">
@@ -72,9 +76,9 @@ export default function BusinessSignup() {
           </form>
             <p className="text-center text-sm font-bold md:mt-5 mt-2">
               Already have an account?{" "}
-              <a href="/login" className="text-[#20BF0E]">
+              <Link href={`/${locale}/sign-in`} className="text-[#20BF0E]">
                 Login
-              </a>
+              </Link>
             </p>
         </div>
       </div>

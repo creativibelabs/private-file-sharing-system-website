@@ -2,10 +2,22 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 
 const AccountTypeSelection = () => {
   const [selectedType, setSelectedType] = useState<string | null>(null);
 
+  const router = useRouter();
+  const locale = useLocale(); 
+
+  const handleClick = () => {
+    if (selectedType === "business") {
+      router.push(`/${locale}/sign-up/business`);
+    } else {
+      router.push(`/${locale}/sign-up/personal`);
+    }
+  };
   return (
     <main>
       <div
@@ -46,6 +58,7 @@ const AccountTypeSelection = () => {
                 <div className="flex flex-col items-center justify-center py-4">
                   <div className="w-50 h-50 mb-4 relative">
                     <Image
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       src="/images/Header/type_user.png"
                       alt="Personal Account"
                       fill
@@ -71,6 +84,7 @@ const AccountTypeSelection = () => {
                 <div className="flex flex-col items-center justify-center py-4">
                   <div className="w-50 h-50  mb-4 relative">
                     <Image
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       src="/images/Header/type_business.png"
                       alt="Business Account"
                       fill
@@ -87,7 +101,7 @@ const AccountTypeSelection = () => {
 
           {/* Navigation Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4">
-            <button className="flex items-center justify-center gap-2 bg-transparent text-white border border-white/50 rounded-full px-5 sm:px-6 py-2 hover:bg-emerald-800/60 hover:border-white/70 transition-all duration-300 w-full sm:w-auto">
+            <button onClick={() => router.push("/")} className="flex items-center justify-center gap-2 bg-transparent text-white border border-white/50 rounded-full px-5 sm:px-6 py-2 hover:bg-emerald-800/60 hover:border-white/70 transition-all duration-300 w-full sm:w-auto">
               <ArrowLeft size={16} />
               BACK TO HOME
             </button>
@@ -98,6 +112,7 @@ const AccountTypeSelection = () => {
                   : "opacity-70 cursor-not-allowed"
                 }`}
               disabled={!selectedType}
+              onClick={handleClick}
             >
               NEXT
             </button>

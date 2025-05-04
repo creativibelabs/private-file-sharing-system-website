@@ -58,7 +58,7 @@ export default function Header({ locale }: { locale: string }) {
           <div className="hidden md:flex space-x-3">
             <LanguageSelector locale={locale} />
             <Link
-              href={`/${locale}/Auth/User_login`}
+              href={`/${locale}/sign-in`}
               className={`flex items-center justify-center px-6 py-2 text-sm font-medium rounded-xl border ${
                 pathname.includes("/Auth/User_login")
                   ? "text-white bg-gradient-to-r from-emerald-500 to-emerald-700"
@@ -116,7 +116,7 @@ export default function Header({ locale }: { locale: string }) {
             <LanguageSelector locale={locale} />
           </div>
           <Link
-            href={`/${locale}/Auth/User_login`}
+            href={`/${locale}/sign-in`}
             className={`block px-4 py-2 text-base rounded-lg transition-colors ${
               pathname.includes("/Auth/User_login")
                 ? "text-white bg-emerald-600/80"

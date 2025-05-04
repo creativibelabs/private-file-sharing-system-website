@@ -1,6 +1,9 @@
+import { useLocale } from "next-intl";
 import Link from "next/link";
 
 export default function Login() {
+  const locale = useLocale();
+
   return (
     <main className="bg-cover  relative overflow-hidden" style={{ backgroundImage: "url('/images/auth/login-bg.png')", height: "100vh", width: "100vw" }}>
 
@@ -50,7 +53,7 @@ export default function Login() {
           </form>
           <p className="text-center text-md font-bold md:mt-5 mt-2">
             Don't have an account?{" "}
-            <Link href="/login" className="text-[#20BF0E] font-medium underline">
+            <Link href={`/${locale}/sign-up`} className="text-[#20BF0E] font-medium underline">
               Sign Up
             </Link>
           </p>
