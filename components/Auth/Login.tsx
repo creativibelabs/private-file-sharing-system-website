@@ -48,7 +48,7 @@ export default function Login() {
               LOGIN
             </button>
 
-            <Link href="#" className="w-full px-4 py-2 text-[#20BF0E] font-semibold text-right block">Forgot Password?</Link>
+            <Link href={`/${locale}/forgot-password`} className="w-full px-4 py-2 text-[#20BF0E] font-semibold text-right block">Forgot Password?</Link>
 
           </form>
           <p className="text-center text-md font-bold md:mt-5 mt-2">

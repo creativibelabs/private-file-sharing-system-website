@@ -1,8 +1,8 @@
-import BusinessSignup from '@/components/Auth/BusinessSignup'
+import PersonalSignup from '@/components/Auth/PersonalSignup';
 import React from 'react'
 
-const BusinessPage = () => {
-  return <BusinessSignup />
+const PersonalPage = () => {
+  return <PersonalSignup />
 }
 
-export default BusinessPage;
+export default PersonalPage;
