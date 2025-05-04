@@ -1,4 +1,4 @@
-import BusinessSignup from '@/components/Auth/sign-up/BusinessSignup';
+import BusinessSignup from '@/components/Auth/BusinessSignup';
 
 const AccountTypeSelection = () => <BusinessSignup />
 
