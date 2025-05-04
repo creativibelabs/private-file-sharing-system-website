@@ -2,7 +2,14 @@ import Link from "next/link";
 
 export default function Login() {
   return (
-    <main className="bg-cover  relative" style={{ backgroundImage: "url('/images/auth/login-bg.png')", height: "100vh", width: "100vw" }}>
+    <main className="bg-cover  relative overflow-hidden" style={{ backgroundImage: "url('/images/auth/login-bg.png')", height: "100vh", width: "100vw" }}>
+
+      {/* Glow - Bottom Left */}
+      <div className="absolute bottom-[-50px] left-[-100px] w-[300px] h-[500px] rounded-full bg-[#43E1A9] blur-[120px] opacity-60 z-0" />
+
+      {/* Glow - Bottom Right */}
+      <div className="absolute bottom-[-110px] right-[-100px] w-[300px] h-[300px] rounded-full bg-[#43E1A9] blur-[120px] opacity-35 z-0" />
+
       <div className="min-h-screen flex flex-col md:flex-row justify-center items-center px-4 md:px-16 py-10 gap-16">
         {/* Left: Welcome Text */}
         <div className="w-full md:max-w-[40%] text-center md:text-left ">
